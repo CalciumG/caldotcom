@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import LoginComponent from "./Components/login/login";
-import SignUpComponent from "./Components/signup/signup";
+import { SignUpComponent } from "./Components/signup/signup";
 import DashboardComponent from "./Components/dashboard/dashboard";
 import { Route, BrowserRouter as Router } from "react-router-dom";
 
