@@ -1,6 +1,7 @@
 import { Button, TextField } from "@material-ui/core";
 import { Form, Formik, Field } from "formik";
 import React from "react";
+import Dashboard from "../dashboard/dashboard";
 
 interface Values {
   firstName: string;
@@ -12,7 +13,7 @@ interface Props {
   onSubmit: (values: Values) => void;
 }
 
-const SignUpComponent: React.FC<Props> = ({ onSubmit }) => {
+const SignInComponent: React.FC<Props> = ({ onSubmit }) => {
   return (
     <Formik
       initialValues={{ firstName: "", lastName: "", email: "" }}
@@ -24,31 +25,27 @@ const SignUpComponent: React.FC<Props> = ({ onSubmit }) => {
       {({ values, handleChange, handleBlur }) => (
         <Form>
           <div>
-            <Field name="firstName" placeholder="first name" />
-            <TextField
-              placeholder="First Name"
+            <Field
               name="firstName"
-              value={values.firstName}
-              onChange={handleChange}
-              onBlur={handleBlur}
+              placeholder="first name"
+              component={Dashboard}
+              label="First Name"
             />
           </div>
           <div>
-            <TextField
-              placeholder="Last Name"
+            <Field
               name="lastName"
-              value={values.lastName}
-              onChange={handleChange}
-              onBlur={handleBlur}
+              placeholder="last name"
+              component={Dashboard}
+              label="Last Name"
             />
           </div>
           <div>
-            <TextField
-              placeholder="Email"
+            <Field
               name="email"
-              value={values.email}
-              onChange={handleChange}
-              onBlur={handleBlur}
+              placeholder="email"
+              component={Dashboard}
+              label="Email"
             />
           </div>
           <pre>{JSON.stringify(values, null, 2)}</pre>
@@ -59,4 +56,4 @@ const SignUpComponent: React.FC<Props> = ({ onSubmit }) => {
   );
 };
 
-export default SignUpComponent;
+export default SignInComponent;

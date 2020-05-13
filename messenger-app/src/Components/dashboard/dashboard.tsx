@@ -1,15 +1,15 @@
 import React from "react";
-import { TextField } from "@material-ui/core";
+import { TextField, TextFieldProps } from "@material-ui/core";
 import { FieldProps } from "formik";
 
-interface Props extends FieldProps {
-  placeholder: string;
-}
-
-const Dashboard: React.FC<Props> = ({ placeholder, field }) => {
+const Dashboard: React.FC<FieldProps & TextFieldProps> = ({
+  label,
+  placeholder,
+  field,
+}) => {
   return (
     <div>
-      <TextField placeholder={placeholder} {...field} />
+      <TextField label={label} placeholder={placeholder} {...field} />
     </div>
   );
 };
