@@ -3,8 +3,8 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import LoginComponent from "./Components/login/login";
-import { SignUpComponent } from "./Components/signup/signup";
-import DashboardComponent from "./Components/dashboard/dashboard";
+import SignUpComponent from "./Components/signup/signup";
+import Dashboard from "./Components/dashboard/dashboard";
 import { Route, BrowserRouter as Router } from "react-router-dom";
 
 const firebase = require("firebase");
@@ -25,7 +25,7 @@ const routing = (
     <div id="routing-container">
       <Route path="/login" component={LoginComponent}></Route>
       <Route path="/signup" component={SignUpComponent}></Route>
-      <Route path="/dashboard" component={DashboardComponent}></Route>
+      <Route path="/dashboard" component={Dashboard}></Route>
     </div>
   </Router>
 );

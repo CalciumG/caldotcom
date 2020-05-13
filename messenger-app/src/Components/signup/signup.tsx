@@ -1,5 +1,5 @@
 import { Button, TextField } from "@material-ui/core";
-import { Form, Formik } from "formik";
+import { Form, Formik, Field } from "formik";
 import React from "react";
 
 interface Values {
@@ -12,7 +12,7 @@ interface Props {
   onSubmit: (values: Values) => void;
 }
 
-export const SignUpComponent: React.FC<Props> = ({ onSubmit }) => {
+const SignUpComponent: React.FC<Props> = ({ onSubmit }) => {
   return (
     <Formik
       initialValues={{ firstName: "", lastName: "", email: "" }}
@@ -24,6 +24,7 @@ export const SignUpComponent: React.FC<Props> = ({ onSubmit }) => {
       {({ values, handleChange, handleBlur }) => (
         <Form>
           <div>
+            <Field name="firstName" placeholder="first name" />
             <TextField
               placeholder="First Name"
               name="firstName"
@@ -57,3 +58,5 @@ export const SignUpComponent: React.FC<Props> = ({ onSubmit }) => {
     </Formik>
   );
 };
+
+export default SignUpComponent;
