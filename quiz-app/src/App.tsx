@@ -1,12 +1,13 @@
-import React, { useState } from "react";
-import Progress from "./components/Progress";
+import React, { FunctionComponent } from "react";
 
-function App(): React.ReactNode {
+import Quiz from "./components/Quiz";
+
+const App: FunctionComponent = () => {
   return (
     <div>
-      <Progress total="3" current="1" />
+      <Quiz />
     </div>
   );
-}
+};
 
 export default App;
