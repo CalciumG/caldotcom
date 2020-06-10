@@ -1,13 +1,14 @@
-import React, { FunctionComponent } from "react";
+import React from "react";
+import "./App.css";
 
-import Quiz from "./components/Quiz";
-
-const App: FunctionComponent = () => {
+function App() {
   return (
-    <div>
-      <Quiz />
+    <div className="App">
+      <div>
+        <h1>hi</h1>
+      </div>
     </div>
   );
-};
+}
 
 export default App;
