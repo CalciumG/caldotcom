@@ -1,4 +1,4 @@
-# calciumdevelopment
+# calciumdev
 
 ## Project setup
 ```
