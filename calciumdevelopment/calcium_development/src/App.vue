@@ -1,8 +1,6 @@
 <template>
-  <v-app>
-   
-
-    <v-main fluid>
+  <v-app id="inspire">
+    <v-main>
       <HelloWorld />
     </v-main>
   </v-app>
@@ -16,11 +14,11 @@ export default Vue.extend({
   name: "App",
 
   components: {
-    HelloWorld
+    HelloWorld,
   },
 
   data: () => ({
     //
-  })
+  }),
 });
 </script>
