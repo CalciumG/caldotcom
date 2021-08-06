@@ -1,44 +1,45 @@
 import React from "react";
-import { Github, Linkedin } from "react-bootstrap-icons";
+import "../";
 
 const Home = () => {
   return (
-    <div
-      id="container"
-      className="h-screen flex justify-start items-center bg-black max-h-full"
-    >
-      <div className="px-6 py-4">
-        <div className="font-bold text-white text-5xl mb-2 ml-10">
-          Callum Gordon
+    <section id="about">
+      <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
+        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+            Hi, I'm Callum.
+            <br className="hidden lg:inline-block" />I love to build amazing
+            apps.
+          </h1>
+          <p className="mb-8 leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+            laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
+            Laborum, voluptas natus?
+          </p>
+          <div className="flex justify-center">
+            <a
+              href="#contact"
+              className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
+            >
+              Work With Me
+            </a>
+            <a
+              href="#projects"
+              className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
+            >
+              See My Past Work
+            </a>
+          </div>
         </div>
-        <div className="flex ml-10">
-          <a
-            class="mr-4 icon"
-            href="https://github.com/calciumg"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Github color="rgba(243,244,246)" size={40} />
-          </a>
-          <a
-            class="mr-4 icon"
-            href="https://www.linkedin.com/in/callum-j-gordon/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Linkedin color="rgba(243,244,246)" size={40} />
-          </a>
-          <a
-            class="text-sm border-2 p-2 hvr-sweep-to-right"
-            download
-            href="CallumGordon-CV.pdf"
-            rel="noopener noreferrer"
-          >
-            Download CV
-          </a>
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <img
+            className="object-cover object-center rounded"
+            alt="hero"
+            src="./coding.svg"
+          />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

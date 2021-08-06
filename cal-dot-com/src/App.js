@@ -5,11 +5,11 @@ import Home from "./Components/Home";
 
 function App() {
   return (
-    <div>
+    <main className="text-gray-400 bg-gray-900 body-font">
       <Home />
-      <About />
+      {/* <About /> */}
       <Projects />
-    </div>
+    </main>
   );
 }
 
