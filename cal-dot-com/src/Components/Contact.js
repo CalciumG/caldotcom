@@ -17,13 +17,13 @@ export default function Contact() {
               class="mr-4 icon"
               href="https://github.com/calciumg"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             ></a>
             <a
               class="icon"
               href="https://www.linkedin.com/in/callum-j-gordon/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             ></a>
           </div>
         </div>

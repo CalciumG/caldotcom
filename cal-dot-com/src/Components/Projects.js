@@ -28,7 +28,7 @@ const Projects = () => {
                 <img
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://picsum.photos/200/300"
+                  src={project.image}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-800 opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
